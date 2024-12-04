@@ -9,7 +9,6 @@ import BookmarkView from "./Views/BookmarkView"
 
 function App() {
 
-
   return (
     <>
       <BrowserRouter>
