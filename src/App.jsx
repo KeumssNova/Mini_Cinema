@@ -1,11 +1,11 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom"
-import { useState } from 'react'
 import './App.css'
-import Movies from './Components/AllMovies'
 import NavBar from "./Components/NavBar"
 import HomeView from "./Views/HomeView"
 import AboutView from "./Views/AboutView"
 import BookmarkView from "./Views/BookmarkView"
+import Footer from './Components/Footer'
+import Movie from "./Components/Movie"
 
 function App() {
 
@@ -13,11 +13,14 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar/>
+        <Movie />
         <Routes>
           <Route path="/" element={<HomeView/>}/>
           <Route path="/About" element={<AboutView/>}/>
           <Route path="/Bookmark" element={<BookmarkView/>}/>
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </>
   )
