@@ -1,7 +1,7 @@
-import Movie from '../Components/Movie'
+import Movie from "../Components/Movie"
 const HomeView = () => {
   return (
-    <div></div>
+    <div>{<Movie />}</div>
   )
 }
 

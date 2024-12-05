@@ -11,3 +11,13 @@ a img {
 footer{
     height: 80px;
 }
+
+#card{
+    width: inherit;
+}
+
+.Movies-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+

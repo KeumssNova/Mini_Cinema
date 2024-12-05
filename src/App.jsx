@@ -11,9 +11,9 @@ function App() {
 
   return (
     <>
+
       <BrowserRouter>
         <NavBar/>
-        <Movie />
         <Routes>
           <Route path="/" element={<HomeView/>}/>
           <Route path="/About" element={<AboutView/>}/>
