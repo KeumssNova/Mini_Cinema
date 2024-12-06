@@ -5,7 +5,7 @@ import HomeView from "./Views/HomeView"
 import AboutView from "./Views/AboutView"
 import BookmarkView from "./Views/BookmarkView"
 import Footer from './Components/Footer'
-import Movie from "./Components/Movie"
+
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path="/" element={<HomeView/>}/>
-          <Route path="/About" element={<AboutView/>}/>
+          <Route path="/About/:id" element={<AboutView/>}/>
           <Route path="/Bookmark" element={<BookmarkView/>}/>
         </Routes>
 
