@@ -5,9 +5,11 @@ import HomeView from "./Views/HomeView"
 import AboutView from "./Views/AboutView"
 import BookmarkView from "./Views/BookmarkView"
 import Footer from './Components/Footer'
+import { useState } from "react"
 
 
 function App() {
+  const [favorites] = useState([]);
 
   return (
     <>
@@ -17,9 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeView/>}/>
           <Route path="/About/:id" element={<AboutView/>}/>
-          <Route path="/Bookmark" element={<BookmarkView/>}/>
+          <Route path="/bookmark" element={<BookmarkView favorites={favorites}/>} />
         </Routes>
-
         <Footer />
       </BrowserRouter>
     </>

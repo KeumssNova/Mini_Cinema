@@ -12,13 +12,14 @@ footer{
     height: 80px;
 }
 
-#card{
-    width: inherit;
-}
 
 .Movies-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+#card{
+    width: inherit;
 }
 
 #link {
@@ -29,3 +30,15 @@ footer{
     height: 100vh;
 }
 
+.card-body h5{
+    margin: 0;
+}
+.favCard-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn:hover{
+    opacity: 70%;
+
+}

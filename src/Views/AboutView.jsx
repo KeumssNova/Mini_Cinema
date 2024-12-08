@@ -65,11 +65,3 @@ const AboutView = () => {
 }
 
 export default AboutView
-
-
-
-//     <div className=''>
-//     Release Date : {details.release_date}
-// </div>
-
-{/* <h1 className=''> {details.title || details.name} </h1> */ }
